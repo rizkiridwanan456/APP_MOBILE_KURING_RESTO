@@ -1,0 +1,60 @@
+
+<ion-content [fullscreen]="true">
+  <div class="book-tbl">
+    <ul>
+  
+      <li>
+        <label for="i1">Saung1</label>
+      </li>
+      <li>
+        <label for="i2">Saung2</label>
+      </li>
+      
+      <li>
+        <label for="i3">Saung3</label>
+      </li>
+      
+      <li>
+        <label for="i4">Saung4</label>
+      </li>
+      
+      <li>
+        <label for="i5">Saung5</label>
+      </li>
+      
+      <li>
+        <label for="i6">Saung6</label>
+      </li>
+      
+      <li>
+        <label for="i7">Saung7</label>
+      </li>
+      
+      <li>
+        <label for="i8">Saung8</label>
+      </li>
+      
+    </ul>
+  </div>
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Booking Here</h3>
+    <fieldset>
+      <input placeholder="Masukan No Booking (contoh:B01)" type="text"  [(ngModel)]="nobo" name="nobo"tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Masukan Nama (contoh:Sani)" type="text"  [(ngModel)]="nama" name="nama"tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Masukan No Saung (contoh:S01)" type="text" [(ngModel)]="no" name="no" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Masukan Jumlah Orang (contoh:5)" type="text" [(ngModel)]="orang" name="orang" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <button type="button"  (click)="addBooking()" class="btn btn-primary">Enter</button>
+    </fieldset>
+  </form>
+</div>
+
+</ion-content>

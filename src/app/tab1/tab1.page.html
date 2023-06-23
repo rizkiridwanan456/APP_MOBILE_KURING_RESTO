@@ -1,0 +1,110 @@
+<ion-content [fullscreen]="true">
+<div class="header">
+  <h1>Menu</h1>
+  <div class="avatar">
+    <ion-img src="assets/face.png"></ion-img>
+  </div>
+</div>
+<ion-searchbar></ion-searchbar>
+
+<div class="">
+  <li data-id="asfd123">
+    <div class="foodblock" >
+      
+      <div class="foodimage"><img class="imagef" src="assets/paket1.jpg"></div>
+      
+      <div class="content">
+        <div class="namenprice">
+          <div>Paket 1 </div>
+        </div>
+        <div class="desnadd">
+          <div>(ayam bakar + nasi + pete + tahu/tempe + sambal) </div>
+        </div>    
+      </div>
+    
+    </div>  
+    </li>  
+    
+    <li data-id="asfd123">
+    <div class="foodblock" >
+      
+      <div class="foodimage"><img class="imagef" src="assets/paket2.jpg"></div>
+      
+      <div class="content">
+        <div class="namenprice">
+          <div>Paket 2 </div>
+        </div>
+        <div class="desnadd">
+          <div>(ikan bakar + nasi + soup + ayam goreng + tahu/tempe + sambal)</div>
+        </div>    
+      </div>
+    
+    </div>  
+    </li>  
+    
+    
+    <li data-id="asfd123">
+    <div class="foodblock" >
+      
+      <div class="foodimage"><img class="imagef" src="assets/paket3.jpg"></div>
+      
+      <div class="content">
+        <div class="namenprice">
+          <div>Paket 3 </div>
+        </div>
+        <div class="desnadd">
+          <div>(ayam goreng + nasi + soup + tahu/tempe + sambal)</div>
+        </div>    
+      </div>
+    
+    </div>  
+    </li>  
+    
+    
+    <li data-id="asfd123">
+    <div class="foodblock" >
+      
+      <div class="foodimage"><img class="imagef" src="assets/paket4.jpg"></div>
+      
+      <div class="content">
+        <div class="namenprice">
+          <div>Paket 4 </div>
+        </div>
+        <div class="desnadd">
+          <div>(ayam bakar + nasi merah + tahu/tempe + sambal + teh botol sosro)</div>
+        </div>    
+      </div>
+    
+    </div>  
+    </li>  
+    
+</div>
+
+<ion-toolbar>
+  <ion-title size="large">Order Here</ion-title>
+</ion-toolbar>
+<form>
+  <div class="form-group">
+    <label>Kode Pelanggan</label>
+    <input type="input" class="form-control" [(ngModel)]="kp" name="kp" placeholder="Enter Kode Pelanggan">
+    
+  </div>
+  <div class="form-group">
+    <label>No Paket</label>
+    <input type="input" class="form-control" [(ngModel)]="nopa" name="nopa" placeholder="Enter No Paket">
+    
+  </div>
+  <div class="form-group">
+    <label>Nama</label>
+    <input type="input" class="form-control" [(ngModel)]="nama" name="nama" placeholder="Enter Nama">
+    
+  </div>
+
+  <div class="form-group">
+    <label>Jumlah</label>
+    <input type="input" class="form-control" [(ngModel)]="jumlah" name="jumlah" placeholder="Enter Jumlah">
+    
+  </div>
+  <button type="button"  (click)="addPesan()" class="btn btn-primary">Enter</button>
+</form>
+</ion-content>

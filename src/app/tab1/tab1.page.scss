@@ -1,0 +1,116 @@
+ion-content{
+    --padding-start:2rem;
+    --padding-end:2rem;
+    background-color: #ffc409;
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-top: 3rem;
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #515151;
+        margin: 0;
+    }
+    .avatar{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        overflow: hidden;
+
+        ion-img{
+            width: 90%;
+            height: 90%;
+        }
+    }
+    ion-searchbar{
+        --box-shadow:none;
+        --background: #f3f3f3;
+        --border-radius: 1.2rem;
+        --placeholder-font-weight: 600;
+        --placeholder-font-opacity: 0.2;
+
+        padding: 0;
+        margin-bottom: 2rem;
+
+    }
+
+    li{
+        list-style-type: none;
+        }
+        .foodblock{
+          margin: 0;
+          display:flex;
+          height: 100%;
+          
+          box-shadow: 2px 2px  3px 1px;
+          color: #572;
+          border-color: 1px solid #572;
+          border-radius: 5px;
+          
+        }
+        .foodimage{
+           border:0;
+          padding:0;
+          margin:0;
+        }
+        
+        
+        
+        .imagef{
+          padding: 4px;
+          width: 120px;
+          border-radius: 4px 0 0 4px;
+          height: 100px;
+          transition: 0.3s;
+        }
+        .imagef:hover{
+         width: 250px;
+          height: 250px;
+        }
+        .content{
+          flex-grow: 8;
+          
+          padding: 5px;
+        }
+        .namenprice,.desnadd{
+          display: flex; 
+          padding: 5px;
+          justify-content: space-between;
+        }
+        
+        
+        .add{
+          color: white;
+          text-align:center;
+          padding: 5px 15px;
+          background-color: #666;
+          
+          border-radius: 5px;
+          transition: 0.3s;
+          cursor: pointer;
+          box-shadow: 2px 2px 1px #572;
+          outline: none;
+          border: none;
+        }
+        .add:hover{
+          color: yellow;
+          background: #572;
+        }
+        .add:active {
+          background-color: #3e8e41;
+          box-shadow: 1px 1px 4px #572;
+          transform: translate(2px, 2px);
+          
+        }
+
+  
+}
